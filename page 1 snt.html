@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #000000;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .box {
+        width: 400px;
+        height: 300px;
+        background-color: rgb(31, 31, 31);
+        position: relative;
+      }
+
+      .box::before,
+      .box::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(
+          45deg,
+          #ff0000,
+          #00f0f0,
+          #00ff00,
+          #0000ff,
+          #ff0000,
+          #00f0f0,
+          #00ff00,
+          #0000ff,
+          #f00f0f
+        );
+        width: 100%;
+        height: 100%;
+        transform: scale(1.02);
+        z-index: -1;
+        background-size: 500%;
+        animation: animate 20s infinite;
+      }
+
+      .box::after {
+        filter: blur(20px);
+      }
+
+      @keyframes animate {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: 500% 0;
+        }
+      }
+
+      .box-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #ffffff;
+      }
+
+      .box-content h1 {
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .box-content a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="box-content">
+          <h1>ATTENDS, DEUX JEUNES ONT FAIT UNE PAGE SUR SHREK ?</h1>
+          <a href="C:\Users\ordi2212406\Desktop\SNT-web\page2snt> clique ici afin de le voir par toi meme !</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Cette page etait relativement chiante, vu que je ne savais pas comment faire pour la couleur.  -->
+	<!-- En cherchent j'ai fini par trouver !   -->
+
+
+
+
+
+
